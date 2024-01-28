@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ! -->
+    <!-- #region Keep in mind ABOUT META TAGS -->
+    <!-- ! If you don’t want to display your web page in search results at all, -->
+    <!-- ! just add this meta tag inside your head section: -->
+    <!-- ! ----- <meta name="robots" content="none" /> ---- -->
+    <!-- *** -->
+    <!-- ! Because the keywords meta tag was so often abused, -->
+    <!-- ! many years ago Google began disregarding the keywords meta tag. -->
+    <!-- #endregion -->
+
+    <!-- * meta tag | open graph -->
+    <!-- #region Open Graph Tag -->
+    <!-- ! Facebook will use open graph to display information if your content is shared. -->
+    <!-- ! Whatsapp doesn't support picture with a size greater than 300KB. -->
+
+
+    <meta property="og:title" content="MrAli | Energized by engineering, passionate about web development." />
+    <meta property="og:site_name" content="MrAli" />
+
+    <meta property="og:description"
+        content="Fullstack Developer - Building websites from scratch using popular tools and languages." />
+
+    <meta property="og:image" content="https://i.ibb.co/hFLKYdv/Feature-img-SOYUMMY.jpg" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Never Give Up!" />
+
+    <!-- #endregion -->
+    <!-- * meta tag | charset-->
+    <!-- #region Char Set -->
+    <meta charset="UTF-8" />
+    <!-- #endregion -->
+    <!-- * meta tag | viewport-->
+    <!-- #region View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- #endregion -->
+    <!-- * meta tag | description-->
+    <!-- #region Description Meta Tag -->
+    <!-- ! Google will keep the first 150-160 characters of your meta description, and cut the rest. -->
+    <meta name="description" content="Yummy app" />
+    <!-- #endregion -->
+    <!-- * meta tag | keywords-->
+    <!-- #region keywords Meta Tag -->
+    <!-- <meta name="keywords" content="portfolio, personal, corporate, business, parallax, creative, agency"> -->
+    <!-- #endregion -->
+
+    <!-- ^ web page title tag-->
+    <!-- #region Title -->
+    <!-- ! Google will only display the first 50-60 characters of your title, and cut the rest. -->
+    <!-- ! So long as you fit the important information before the cut-off point. ​-->
+    <title>Yummy app | MrAli</title>
+    <!-- #endregion -->
+    <!-- ^ favicon link-->
+    <!-- #region Fav icon -->
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <!-- #endregion -->
+    <!-- ^ Google Fonts Links-->
+    <!-- #region Google Fonts -->
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <!-- font-family: 'Poppins', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <!-- #endregion -->
+    <!-- ^ fontawesome File "icons"-->
+    <!-- #region Icons -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- #endregion -->
+    <!-- ^ Bootstrap CSS File-->
+    <!-- #region Bootstrap CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- #endregion -->
+    <!-- ^ Style CSS File-->
+    <!-- #region Main Style CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- #endregion -->
+</head>
+
+<body>
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0">
+        <div class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li class="py-2 position-relative cursor-pointer" onclick="ShowSearch(); closeSideNav()">Search</li>
+                    <li class="py-2 position-relative cursor-pointer" onclick="getCategories(); closeSideNav()">
+                        Categories</li>
+                    <li class="py-2 position-relative 
+                cursor-pointer" onclick="getArea(); closeSideNav()">Area</li>
+                    <li class="py-2 position-relative cursor-pointer" onclick="getIngredients(); closeSideNav()">
+                        Ingredients</li>
+                    <li onclick="showContact(); closeSideNav()" class="py-2 position-relative cursor-pointer">Contact Us
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Right <br>Reserved</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center bg-white text-black px-2">
+            <img src="assets/images/yummy.png" alt="yummyLogo" class="logo">
+            <i class="fa-solid fa-align-justify fa-2x open-close"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row py-5 g-4" id="rowData">
+
+        </div>
+    </div>
+
+    <div
+        class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa-solid fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <div class="container w-75" id="SearchItem">
+
+    </div>
+
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jq link -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
